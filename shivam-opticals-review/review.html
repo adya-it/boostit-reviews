@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Share your experience – Shivam Opticals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Serif+Devanagari:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#C8102E;        /* accent red  – change to your site's exact red */
+  --red-dark:#A00D25;
+  --navy:#0B1F3A;       /* dark navy   – change to your site's exact navy */
+  --ink:#1B2A41;
+  --muted:#5F6B7C;
+  --line:#E3DED5;
+  --bg:#FBF8F3;
+  --card:#FFFFFF;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Manrope","Noto Sans Devanagari",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55}
+.top{background:var(--navy);color:#fff}
+.top-in{max-width:560px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-family:"Fraunces","Noto Serif Devanagari",Georgia,serif;font-weight:700;font-size:19px;letter-spacing:.2px}
+.brand small{display:block;font:500 11px/1.2 "Manrope","Noto Sans Devanagari",sans-serif;opacity:.7;letter-spacing:.8px;text-transform:uppercase}
+.lang{display:flex;background:rgba(255,255,255,.12);border-radius:99px;padding:3px}
+.lang button{border:0;background:transparent;color:#fff;font:600 13px "Manrope","Noto Sans Devanagari",sans-serif;padding:7px 14px;border-radius:99px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#fff;color:var(--navy)}
+main{max-width:560px;margin:0 auto;padding:24px 20px 48px}
+h1{font-family:"Fraunces","Noto Serif Devanagari",Georgia,serif;font-weight:700;font-size:28px;line-height:1.2;margin:0 0 8px;color:var(--navy)}
+.lead{color:var(--muted);margin:0 0 22px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 16px;margin:0 0 14px}
+.step h2{display:flex;align-items:center;gap:10px;margin:0 0 12px;font:700 16px/1.3 "Manrope","Noto Sans Devanagari",sans-serif;color:var(--navy)}
+.num{flex:none;width:26px;height:26px;border-radius:50%;background:var(--red);color:#fff;font:700 13px/26px "Manrope",sans-serif;text-align:center}
+.group{margin:14px 0 0}
+.group:first-of-type{margin-top:0}
+.group h3{margin:0 0 8px;font:600 13px/1.3 "Manrope","Noto Sans Devanagari",sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.5px}
+html[lang="hi"] .group h3{text-transform:none;letter-spacing:0;font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--ink);font:600 14px/1.2 "Manrope","Noto Sans Devanagari",sans-serif;padding:10px 14px;border-radius:99px;cursor:pointer;transition:background .12s,border-color .12s,color .12s;min-height:42px}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.chip.branch{flex:1 1 140px;text-align:center;font-size:15px;padding:13px 14px}
+.chip.branch[aria-pressed="true"]{background:var(--red);border-color:var(--red)}
+.hint{font-size:13px;color:var(--muted);margin:8px 0 0}
+.err{color:var(--red-dark);font-weight:600;font-size:14px;margin:8px 0 0}
+label.fl{display:block;font:600 13px/1.3 "Manrope","Noto Sans Devanagari",sans-serif;color:var(--muted);margin:14px 0 6px}
+input[type=text],textarea{width:100%;border:1.5px solid var(--line);border-radius:14px;padding:12px 14px;font:400 16px/1.55 "Manrope","Noto Sans Devanagari",system-ui,sans-serif;color:var(--ink);background:#fff}
+textarea{min-height:150px;resize:vertical}
+input:focus,textarea:focus{outline:none;border-color:var(--navy);box-shadow:0 0 0 3px rgba(11,31,58,.12)}
+.btn{display:block;width:100%;border:0;border-radius:99px;padding:15px 18px;font:700 16px/1.2 "Manrope","Noto Sans Devanagari",sans-serif;cursor:pointer;text-align:center;text-decoration:none;color:#fff;background:var(--red);transition:background .12s,opacity .12s}
+.btn:hover{background:var(--red-dark)}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.btn.navy{background:var(--navy)}
+.btn.navy:hover{background:#142C50}
+.btn.ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+.btn.ghost:hover{background:#F4F0E8}
+.row{display:flex;gap:10px;margin-top:12px}
+.row .btn{flex:1}
+.steps-list{margin:14px 0 0;padding-left:20px;font-size:14px;color:var(--muted)}
+.steps-list li{margin:3px 0}
+.note{font-size:13px;color:var(--muted);margin:16px 2px 0}
+.ok{color:#176B3A;font-weight:600;font-size:14px;margin:8px 0 0}
+</style>
+</head>
+<body>
+<header class="top"><div class="top-in">
+  <div class="brand">Shivam Opticals<small id="tag">Sultanpur</small></div>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">English</button>
+    <button type="button" data-lang="hi" aria-pressed="false">हिन्दी</button>
+  </div>
+</div></header>
+
+<main>
+  <h1 id="t-title"></h1>
+  <p class="lead" id="t-lead"></p>
+
+  <section class="step">
+    <h2><span class="num">1</span><span id="t-branch"></span></h2>
+    <div class="chips" id="branches"></div>
+    <p class="err" id="branch-err" hidden></p>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">2</span><span id="t-tap"></span></h2>
+    <div id="groups"></div>
+    <p class="hint" id="t-tap-hint"></p>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">3</span><span id="t-draft"></span></h2>
+    <button type="button" class="btn navy" id="make"></button>
+    <p class="hint" id="make-hint" hidden></p>
+    <label class="fl" for="mem" id="t-mem"></label>
+    <input type="text" id="mem" maxlength="140" autocomplete="off">
+    <label class="fl" for="text" id="t-text"></label>
+    <textarea id="text"></textarea>
+    <p class="hint" id="t-edit"></p>
+  </section>
+
+  <section class="step">
+    <h2><span class="num">4</span><span id="t-post"></span></h2>
+    <div class="row">
+      <button type="button" class="btn ghost" id="copy"></button>
+      <a class="btn" id="open" href="#" target="_blank" rel="noopener"></a>
+    </div>
+    <p class="ok" id="copied" hidden></p>
+    <ol class="steps-list" id="after"></ol>
+  </section>
+
+  <p class="note" id="t-note"></p>
+</main>
+
+<script>
+/* ============ SETTINGS (edit here) ============ */
+// After you deploy the Cloudflare Worker, paste its URL between the quotes.
+// Leave it empty ("") to use only the built-in wording bank (no AI).
+const WORKER_URL = "";
+const WORKER_TIMEOUT_MS = 9000;
+
+const BRANCHES = {
+  dariyapur: { en: "Dariyapur", hi: "दरियापुर", link: "https://g.page/r/CdMFlDkiGyUIEBM/review" },
+  kasba:     { en: "Kasba",     hi: "कस्बा",      link: "https://g.page/r/CaBllHWfZDekEBM/review" }
+};
+/* ============================================== */
+
+const UI = {
+  en: {
+    tag: "Sultanpur",
+    title: "Share your experience",
+    lead: "Tap what applies, get a short draft, change it into your own words, then post it on Google. It takes about a minute.",
+    branch: "Which branch did you visit?",
+    tap: "What was your visit like? (all optional)",
+    tapHint: "Tap only what is true for you. You can skip anything.",
+    draft: "Your draft",
+    make: "Write my draft",
+    remake: "Write it differently",
+    writing: "Writing…",
+    needTap: "Tap at least one option above to get a draft. Or just write your own review below.",
+    mem: "Something specific you remember (optional)",
+    memPh: "For example, what you bought or who helped you",
+    text: "Your review (edit freely)",
+    textPh: "Your draft will appear here. You can also write your own words.",
+    edit: "This draft was put together from the options you tapped. Please change it so it says what you really think.",
+    post: "Post on Google",
+    copy: "Copy text",
+    copied: "Copied! Now tap “Open Google review”.",
+    copyFail: "Could not copy. Press and hold the text to copy it.",
+    open: "Open Google review",
+    chooseBranch: "Please choose your branch first.",
+    confirmReplace: "Your edits will be replaced by a new draft. Continue?",
+    after: [
+      "Tap “Open Google review”. It opens in a new tab.",
+      "Choose your own star rating on Google.",
+      "Press and hold in the review box and choose Paste, or write your own words.",
+      "Tap Post."
+    ],
+    note: "You choose your own star rating on Google. Please share only your honest experience. Nothing is posted automatically, and we do not offer anything in return for a review."
+  },
+  hi: {
+    tag: "सुल्तानपुर",
+    title: "अपना अनुभव साझा करें",
+    lead: "जो बातें सही हों उन्हें चुनें, एक छोटा ड्राफ़्ट पाएँ, उसे अपने शब्दों में बदलें और Google पर पोस्ट करें। इसमें करीब एक मिनट लगता है।",
+    branch: "आप किस शाखा में आए थे?",
+    tap: "आपका अनुभव कैसा रहा? (सब वैकल्पिक)",
+    tapHint: "सिर्फ़ वही चुनें जो आपके लिए सच हो। कुछ भी छोड़ सकते हैं।",
+    draft: "आपका ड्राफ़्ट",
+    make: "मेरा ड्राफ़्ट लिखें",
+    remake: "दूसरे तरीक़े से लिखें",
+    writing: "लिखा जा रहा है…",
+    needTap: "ड्राफ़्ट के लिए ऊपर कम से कम एक विकल्प चुनें। या नीचे अपना रिव्यू ख़ुद लिखें।",
+    mem: "कोई ख़ास बात जो आपको याद हो (वैकल्पिक)",
+    memPh: "जैसे आपने क्या लिया या किसने मदद की",
+    text: "आपका रिव्यू (बेझिझक बदलें)",
+    textPh: "आपका ड्राफ़्ट यहाँ दिखेगा। आप अपने शब्द भी लिख सकते हैं।",
+    edit: "यह ड्राफ़्ट आपके चुने विकल्पों से बना है। कृपया इसे ऐसे बदलें कि वह आपकी असली राय बताए।",
+    post: "Google पर पोस्ट करें",
+    copy: "टेक्स्ट कॉपी करें",
+    copied: "कॉपी हो गया! अब “Google रिव्यू खोलें” दबाएँ।",
+    copyFail: "कॉपी नहीं हो सका। टेक्स्ट को दबाकर रखें और कॉपी करें।",
+    open: "Google रिव्यू खोलें",
+    chooseBranch: "कृपया पहले अपनी शाखा चुनें।",
+    confirmReplace: "आपके बदलाव नए ड्राफ़्ट से बदल जाएँगे। आगे बढ़ें?",
+    after: [
+      "“Google रिव्यू खोलें” दबाएँ। यह नए टैब में खुलेगा।",
+      "Google पर अपनी स्टार रेटिंग ख़ुद चुनें।",
+      "रिव्यू बॉक्स में दबाकर रखें और Paste चुनें, या अपने शब्द लिखें।",
+      "Post दबाएँ।"
+    ],
+    note: "स्टार रेटिंग आप Google पर ख़ुद चुनते हैं। कृपया सिर्फ़ अपना सच्चा अनुभव लिखें। कुछ भी अपने आप पोस्ट नहीं होता, और रिव्यू के बदले हम कुछ नहीं देते।"
+  }
+};
+
+/* Groups and chips. g = group, id must match the Worker's list. */
+const GROUPS = [
+  { id: "a", en: "What did you come for?", hi: "आप किस काम से आए थे?", chips: [
+    ["eyetest", "Eye test", "आँखों की जाँच"],
+    ["frames", "New frames", "नया फ्रेम"],
+    ["sunglasses", "Sunglasses", "सनग्लासेस"],
+    ["lenses", "Lenses", "लेंस"],
+    ["contacts", "Contact lenses", "कॉन्टैक्ट लेंस"],
+    ["repair", "Repair / adjustment", "मरम्मत / एडजस्टमेंट"] ]},
+  { id: "b", en: "Customer service", hi: "ग्राहक सेवा", chips: [
+    ["friendly", "Friendly staff", "मिलनसार स्टाफ़"],
+    ["patient", "Patient with my questions", "मेरे सवालों पर धैर्य रखा"],
+    ["explained", "Explained things clearly", "सब कुछ साफ़ समझाया"],
+    ["quick", "Quick service", "तेज़ सेवा"] ]},
+  { id: "c", en: "Prices", hi: "कीमतें", chips: [
+    ["affordable", "Affordable", "किफ़ायती"],
+    ["fair", "Fair and honest pricing", "सही और ईमानदार दाम"],
+    ["value", "Good value for the quality", "क्वालिटी के हिसाब से अच्छी कीमत"],
+    ["nopressure", "No pressure to upgrade", "महँगा लेने का दबाव नहीं"] ]},
+  { id: "d", en: "Product choice", hi: "चश्मों का चुनाव", chips: [
+    ["range", "Wide range of frames", "फ्रेम की बड़ी रेंज"],
+    ["brands", "Good brands", "अच्छे ब्रांड"],
+    ["fitchoice", "Helped me find the right fit", "सही फ़िट चुनने में मदद की"] ]},
+  { id: "e", en: "Eye test and fitting", hi: "आँखों की जाँच और फिटिंग", chips: [
+    ["thorough", "Thorough eye test", "पूरी और ध्यान से जाँच"],
+    ["accurate", "Accurate prescription", "सही प्रिस्क्रिप्शन"],
+    ["comfy", "Comfortable fit", "आरामदायक फ़िट"],
+    ["ontime", "Ready on time", "समय पर तैयार"] ]}
+];
+
+/* Built-in wording bank. Used only when the AI helper is not set up or fails.
+   Every sentence comes from a chip the customer tapped. Hindi sentences avoid
+   gendered verb forms so they read correctly for any speaker. */
+const BANK = {
+  en: {
+    eyetest: ["I went for an eye test.","I got my eyes tested here.","I came in for an eye check-up.","I had my eye test done at this shop.","I visited to get my eyes checked.","I got an eye examination done here."],
+    frames: ["I bought new frames here.","I came to pick out new frames.","I got a new pair of frames.","I was here to choose a new frame.","I visited to buy new spectacle frames.","I got new frames from here."],
+    sunglasses: ["I came in for sunglasses.","I bought a pair of sunglasses here.","I was looking for sunglasses.","I picked up new sunglasses from here.","I visited to buy sunglasses.","I got sunglasses here."],
+    lenses: ["I got new lenses made here.","I came in to get my lenses done.","I visited for new lenses.","I had my lenses fitted here.","I went there to change my lenses.","I got my spectacle lenses made."],
+    contacts: ["I came in for contact lenses.","I bought contact lenses here.","I visited to get contact lenses.","I got my contact lenses from here.","I was here for contact lenses.","I picked up contact lenses here."],
+    repair: ["I came in to get my glasses repaired.","I got my glasses adjusted here.","I visited for a repair on my spectacles.","I had my frame adjusted.","I took my glasses in for an adjustment.","I got my spectacles fixed here."],
+    friendly: ["The staff were friendly.","Everyone at the shop was friendly.","The staff were warm and welcoming.","I found the team friendly.","The staff were polite and friendly.","The team was friendly towards me."],
+    patient: ["The staff were patient with all my questions.","They answered my questions patiently.","They never rushed me and were patient with my questions.","They took time to answer everything I asked.","The staff patiently handled all my doubts.","I asked a lot of questions and they stayed patient."],
+    explained: ["Everything was explained clearly.","They explained things in a way that was easy to understand.","The staff explained everything clearly.","I understood everything because it was explained well.","They took the time to explain each step.","The explanations were clear and simple."],
+    quick: ["The service was quick.","I was attended to quickly.","The work was done fast.","There was no long wait.","The staff were quick to help.","Service was prompt."],
+    affordable: ["The prices were affordable.","Everything was reasonably priced.","It was easy on the pocket.","The rates were affordable.","I found the prices affordable.","The prices suited my budget."],
+    fair: ["The pricing was fair and honest.","They charged a fair price and were honest about it.","Honest and fair pricing.","I felt the prices were fair and honest.","The shop was honest about prices.","They were upfront and fair about the cost."],
+    value: ["It was good value for the quality.","The quality was worth the price.","I got good quality for the price I paid.","Good value for money.","The quality justified the price.","I felt the price matched the quality."],
+    nopressure: ["They didn't pressure me to upgrade.","There was no pressure to buy something costlier.","I wasn't pushed to take anything more expensive.","They let me decide without pushing.","No pressure to upgrade at all.","I never felt pushed to spend more."],
+    range: ["They have a wide range of frames.","There were plenty of frames to choose from.","The shop has a big collection of frames.","I had a lot of frame options to pick from.","The variety of frames was wide.","So many frame designs to choose from."],
+    brands: ["They stock good brands.","The brands available were good.","I found good brands here.","They carry good brands.","The shop carries good brands.","Good brands were available."],
+    fitchoice: ["They helped me find the right fit.","The staff helped me find what suited me.","I got help in choosing the right fit.","They guided me to a frame that fits well.","The team helped me pick the right pair.","They helped me settle on the right pair."],
+    thorough: ["The eye test was thorough.","They did a careful and thorough eye test.","The eye examination was detailed.","The eye check-up was done thoroughly.","They checked my eyes thoroughly.","The eye test was done carefully and completely."],
+    accurate: ["My prescription was accurate.","The prescription turned out accurate.","The power in my glasses is accurate.","I got an accurate prescription.","The prescription was spot on.","The number was checked accurately."],
+    comfy: ["The glasses fit comfortably.","The fit is comfortable.","My new glasses feel comfortable to wear.","The fitting was comfortable.","The frame sits comfortably.","They fit well and feel comfortable."],
+    ontime: ["My glasses were ready on time.","It was ready by the promised time.","Delivered on time as promised.","They kept to the time they promised.","The order was ready on time.","I got it on time."]
+  },
+  hi: {
+    eyetest: ["आँखों की जाँच यहाँ करवाई।","आँखें चेक करवाने के लिए यहाँ आना हुआ।","यहाँ आँखों का टेस्ट करवाया।","आँखों की जाँच के लिए इस दुकान पर आना हुआ।","मैंने यहाँ अपनी आँखों की जाँच करवाई।","आँखों का चेकअप यहाँ करवाया।"],
+    frames: ["नया फ्रेम यहीं से लिया।","नया फ्रेम लेने के लिए यहाँ आना हुआ।","मैंने यहाँ से नया फ्रेम खरीदा।","नया फ्रेम चुनने यहाँ आना हुआ।","यहाँ से एक नया फ्रेम लिया।","फ्रेम लेने के लिए इस दुकान पर आना हुआ।"],
+    sunglasses: ["धूप का चश्मा (सनग्लासेस) यहाँ से लिया।","सनग्लासेस लेने के लिए यहाँ आना हुआ।","यहाँ से सनग्लासेस खरीदे।","मैंने यहाँ से नए सनग्लासेस लिए।","सनग्लासेस देखने के लिए इस दुकान पर आना हुआ।","यहाँ से एक जोड़ी सनग्लासेस खरीदे।"],
+    lenses: ["नए लेंस यहीं से बनवाए।","लेंस बनवाने के लिए यहाँ आना हुआ।","चश्मे के लेंस यहाँ से बनवाए।","यहाँ से नए लेंस डलवाए।","लेंस बदलवाने के लिए इस दुकान पर आना हुआ।","मैंने यहाँ अपने चश्मे के लिए नए लेंस बनवाए।"],
+    contacts: ["कॉन्टैक्ट लेंस यहाँ से लिए।","कॉन्टैक्ट लेंस के लिए यहाँ आना हुआ।","यहाँ से कॉन्टैक्ट लेंस खरीदे।","मैंने यहाँ से अपने कॉन्टैक्ट लेंस लिए।","कॉन्टैक्ट लेंस लेने के लिए इस दुकान पर आना हुआ।","यहाँ कॉन्टैक्ट लेंस लेने आना हुआ।"],
+    repair: ["चश्मा ठीक करवाने के लिए यहाँ आना हुआ।","चश्मे का एडजस्टमेंट यहाँ करवाया।","अपने चश्मे की मरम्मत यहाँ करवाई।","फ्रेम ठीक करवाने के लिए इस दुकान पर आना हुआ।","चश्मा यहाँ ठीक करवाया।","चश्मे की फिटिंग यहाँ एडजस्ट करवाई।"],
+    friendly: ["स्टाफ़ का व्यवहार मिलनसार रहा।","यहाँ का स्टाफ़ बहुत मिलनसार है।","सभी का व्यवहार दोस्ताना था।","स्टाफ़ ने अपनेपन से बात की।","यहाँ का स्टाफ़ विनम्र और मिलनसार है।","टीम का व्यवहार अच्छा लगा।"],
+    patient: ["मेरे सारे सवालों के जवाब उन्होंने धैर्य से दिए।","स्टाफ़ ने मेरे हर सवाल पर धैर्य रखा।","उन्होंने बिना जल्दबाज़ी किए मेरे सवालों के जवाब दिए।","मैंने काफ़ी सवाल पूछे और उन्होंने हर बार शांति से जवाब दिया।","स्टाफ़ ने मेरी हर शंका धैर्य से दूर की।","सवाल पूछने पर स्टाफ़ ने पूरा समय दिया।"],
+    explained: ["सब कुछ साफ़-साफ़ समझाया गया।","उन्होंने हर बात आसान भाषा में समझाई।","स्टाफ़ ने सारी बातें अच्छे से समझाईं।","हर चीज़ इतने साफ़ तरीक़े से समझाई गई कि समझने में दिक़्क़त नहीं हुई।","उन्होंने एक-एक बात समझाकर बताई।","जानकारी साफ़ और सरल तरीक़े से दी गई।"],
+    quick: ["सेवा तेज़ रही।","काम जल्दी हो गया।","मुझे ज़्यादा इंतज़ार नहीं करना पड़ा।","स्टाफ़ ने जल्दी से मदद की।","यहाँ की सर्विस तेज़ है।","काम फुर्ती से निपटाया गया।"],
+    affordable: ["कीमतें किफ़ायती हैं।","दाम वाजिब लगे।","यहाँ के दाम बजट में हैं।","कीमतें जेब पर भारी नहीं पड़ीं।","मुझे यहाँ के दाम किफ़ायती लगे।","रेट अच्छे और किफ़ायती हैं।"],
+    fair: ["दाम सही और ईमानदार रहे।","उन्होंने सही दाम बताए और ईमानदारी से बात की।","कीमतों में ईमानदारी दिखी।","मुझे लगा कि दाम उचित और ईमानदार हैं।","दामों के बारे में उन्होंने साफ़-साफ़ बताया।","ईमानदारी से सही कीमत बताई गई।"],
+    value: ["क्वालिटी के हिसाब से दाम सही हैं।","जितना पैसा दिया, उसके मुक़ाबले क्वालिटी अच्छी मिली।","पैसे की पूरी क़ीमत मिली।","क्वालिटी को देखते हुए कीमत ठीक लगी।","दाम के हिसाब से क्वालिटी बढ़िया है।","क्वालिटी और कीमत का मेल अच्छा रहा।"],
+    nopressure: ["महँगा सामान लेने का कोई दबाव नहीं डाला गया।","उन्होंने ज़्यादा महँगा लेने के लिए ज़ोर नहीं दिया।","मुझ पर कुछ भी महँगा थोपा नहीं गया।","अपग्रेड करने का दबाव नहीं था।","मुझे अपनी पसंद से चुनने दिया, कोई ज़बरदस्ती नहीं की।","ज़्यादा ख़र्च करने के लिए मुझ पर दबाव नहीं बनाया गया।"],
+    range: ["फ्रेम की बड़ी रेंज उपलब्ध है।","चुनने के लिए बहुत सारे फ्रेम थे।","यहाँ फ्रेम का अच्छा-ख़ासा कलेक्शन है।","फ्रेम के बहुत सारे विकल्प मिले।","यहाँ फ्रेम के डिज़ाइन में काफ़ी वैरायटी है।","चुनने के लिए कई तरह के फ्रेम देखने को मिले।"],
+    brands: ["यहाँ अच्छे ब्रांड मिलते हैं।","अच्छे ब्रांड के चश्मे उपलब्ध हैं।","दुकान पर अच्छे ब्रांड देखने को मिले।","यहाँ ब्रांड्स अच्छे हैं।","ब्रांड की अच्छी चॉइस मिली।","अच्छे ब्रांड्स का कलेक्शन है।"],
+    fitchoice: ["मुझे सही फ़िट चुनने में मदद मिली।","स्टाफ़ ने मेरे लिए सही फ़िट ढूँढने में मदद की।","उन्होंने बताया कि मुझ पर क्या सूट करेगा।","सही चश्मा चुनने में उन्होंने मेरी मदद की।","सही फ़िट वाला फ्रेम चुनने में पूरी मदद मिली।","मेरे लिए सही जोड़ी चुनने में उन्होंने साथ दिया।"],
+    thorough: ["आँखों की जाँच अच्छे से और पूरी तरह की गई।","जाँच बहुत ध्यान से और विस्तार से हुई।","आँखों का टेस्ट पूरी बारीकी से किया गया।","आँखों की पूरी जाँच की गई।","जाँच में कोई जल्दबाज़ी नहीं की गई।","आँखों का चेकअप ध्यान से और पूरा किया गया।"],
+    accurate: ["प्रिस्क्रिप्शन सही निकला।","नंबर बिल्कुल सही चेक किया गया।","चश्मे का नंबर सही आया।","मेरा प्रिस्क्रिप्शन सटीक रहा।","नंबर की जाँच सही और सटीक हुई।","जो नंबर बना, वह सही है।"],
+    comfy: ["चश्मे की फ़िटिंग आरामदायक है।","नया चश्मा पहनने में आरामदायक लगता है।","फ्रेम आराम से बैठता है।","फ़िट अच्छा और आरामदायक है।","चश्मा पहनकर आराम महसूस हुआ।","फ़िटिंग बिल्कुल आरामदायक रही।"],
+    ontime: ["चश्मा समय पर तैयार मिला।","जो समय बताया गया था, उसी पर काम हो गया।","काम तय समय पर पूरा हुआ।","डिलीवरी समय पर मिली।","बताए हुए समय पर चश्मा तैयार था।","ऑर्डर समय पर तैयार हो गया।"]
+  }
+};
+/* Openers and closers are strictly factual / courtesy. They add no opinion. */
+const OPEN = {
+  en: ["I recently visited Shivam Opticals, {b} branch.","I visited the {b} branch of Shivam Opticals.","Sharing this after my visit to Shivam Opticals, {b}.","I went to Shivam Opticals ({b} branch) recently."],
+  hi: ["शिवम ऑप्टिकल्स, {b} शाखा में हाल ही में आना हुआ।","हाल ही में शिवम ऑप्टिकल्स ({b}) जाना हुआ।","शिवम ऑप्टिकल्स की {b} शाखा का मेरा अनुभव।","{b} में शिवम ऑप्टिकल्स पर हाल ही में आना हुआ।"]
+};
+const CLOSE = {
+  en: ["Thank you.", "Thanks.", "Thank you, Shivam Opticals.", ""],
+  hi: ["धन्यवाद।", "शुक्रिया।", "धन्यवाद, शिवम ऑप्टिकल्स।", ""]
+};
+
+/* ---------- state ---------- */
+const $ = id => document.getElementById(id);
+let lang = "en", branch = "", chosen = new Set(), dirty = false, hasDraft = false, lastDraft = "", busy = false;
+
+try { const s = sessionStorage.getItem("sh_lang"); if (s === "hi" || s === "en") lang = s;
+      else if ((navigator.language || "").toLowerCase().startsWith("hi")) lang = "hi"; } catch (e) {}
+const qb = new URLSearchParams(location.search).get("b");
+if (qb && BRANCHES[qb.toLowerCase()]) branch = qb.toLowerCase();
+
+const pick = a => a[Math.floor(Math.random() * a.length)];
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const t = () => UI[lang];
+
+/* ---------- local composer (fallback) ---------- */
+function composeLocal(lg, br, ids, mem) {
+  if (!ids.length) return "";
+  const bn = br ? BRANCHES[br][lg] : (lg === "hi" ? "सुल्तानपुर" : "Sultanpur");
+  const groupOf = {}; GROUPS.forEach(g => g.chips.forEach(c => groupOf[c[0]] = g.id));
+  const visit = shuffle(ids.filter(i => groupOf[i] === "a")), rest = shuffle(ids.filter(i => groupOf[i] !== "a"));
+  const sentences = [pick(OPEN[lg]).replace("{b}", bn)];
+  visit.concat(rest).forEach(id => sentences.push(pick(BANK[lg][id])));
+  if (mem) sentences.push(mem);
+  const c = pick(CLOSE[lg]); if (c) sentences.push(c);
+  return sentences.join(" ");
+}
+
+/* ---------- AI helper (optional) ---------- */
+function validAI(x) {
+  if (x.length < 15 || x.length > 800) return false;
+  const dev = (x.match(/[\u0900-\u097F]/g) || []).length;
+  return lang === "hi" ? dev >= 10 : dev === 0;
+}
+async function composeAI(ids) {
+  if (!WORKER_URL) return null;
+  const ctl = new AbortController(), timer = setTimeout(() => ctl.abort(), WORKER_TIMEOUT_MS);
+  try {
+    const r = await fetch(WORKER_URL, { method: "POST", headers: { "Content-Type": "application/json" }, signal: ctl.signal,
+      body: JSON.stringify({ lang: lang, branch: branch || "", chips: ids }) });
+    if (!r.ok) return null;
+    const j = await r.json();
+    return (j && typeof j.text === "string" && validAI(j.text.trim())) ? j.text.trim() : null;
+  } catch (e) { return null; } finally { clearTimeout(timer); }
+}
+
+/* ---------- rendering ---------- */
+function renderStatic() {
+  const T = t();
+  document.documentElement.lang = lang;
+  document.title = (lang === "hi" ? "अपना अनुभव साझा करें" : "Share your experience") + " – Shivam Opticals";
+  $("tag").textContent = T.tag;
+  $("t-title").textContent = T.title; $("t-lead").textContent = T.lead;
+  $("t-branch").textContent = T.branch; $("t-tap").textContent = T.tap; $("t-tap-hint").textContent = T.tapHint;
+  $("t-draft").textContent = T.draft; $("t-mem").textContent = T.mem; $("mem").placeholder = T.memPh;
+  $("t-text").textContent = T.text; $("text").placeholder = T.textPh; $("t-edit").textContent = T.edit;
+  $("t-post").textContent = T.post; $("copy").textContent = T.copy; $("open").textContent = T.open;
+  $("t-note").textContent = T.note;
+  $("after").replaceChildren(...T.after.map(s => { const li = document.createElement("li"); li.textContent = s; return li; }));
+  document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+  renderBranches(); renderGroups(); updateButtons();
+  $("copied").hidden = true; $("branch-err").hidden = true;
+}
+function chipButton(label, pressed, onclick, extra) {
+  const b = document.createElement("button");
+  b.type = "button"; b.className = "chip" + (extra ? " " + extra : ""); b.textContent = label;
+  b.setAttribute("aria-pressed", String(pressed)); b.addEventListener("click", onclick); return b;
+}
+function renderBranches() {
+  const box = $("branches"); box.replaceChildren();
+  Object.keys(BRANCHES).forEach(k => box.append(chipButton(BRANCHES[k][lang], branch === k, () => { branch = k; $("branch-err").hidden = true; renderBranches(); updateOpen(); }, "branch")));
+}
+function renderGroups() {
+  const box = $("groups"); box.replaceChildren();
+  GROUPS.forEach(g => {
+    const wrap = document.createElement("div"); wrap.className = "group";
+    const h = document.createElement("h3"); h.textContent = g[lang]; wrap.append(h);
+    const row = document.createElement("div"); row.className = "chips";
+    g.chips.forEach(c => row.append(chipButton(lang === "hi" ? c[2] : c[1], chosen.has(c[0]), ev => {
+      if (chosen.has(c[0])) chosen.delete(c[0]); else chosen.add(c[0]);
+      ev.currentTarget.setAttribute("aria-pressed", String(chosen.has(c[0]))); updateButtons();
+    })));
+    wrap.append(row); box.append(wrap);
+  });
+}
+function updateButtons() {
+  const T = t(), m = $("make");
+  m.textContent = busy ? T.writing : (hasDraft ? T.remake : T.make);
+  m.disabled = busy || chosen.size === 0;
+  const h = $("make-hint"); h.textContent = T.needTap; h.hidden = chosen.size !== 0;
+  updateOpen();
+}
+function updateOpen() {
+  const a = $("open");
+  a.href = branch ? BRANCHES[branch].link : "#";
+}
+
+/* ---------- actions ---------- */
+async function makeDraft() {
+  const T = t(); if (busy) return;
+  const ids = GROUPS.flatMap(g => g.chips.map(c => c[0])).filter(id => chosen.has(id));
+  if (!ids.length) return;                       // never write a draft without taps
+  const box = $("text");
+  if (dirty && box.value.trim() && !window.confirm(T.confirmReplace)) return;
+  busy = true; updateButtons();
+  let mem = $("mem").value.trim();
+  if (mem && !/[.!?।]$/.test(mem)) mem += (lang === "hi" ? "।" : ".");
+  let body = await composeAI(ids), out;
+  if (body) {
+    out = mem ? body.replace(/\s+$/, "") + " " + mem : body;
+  } else {
+    for (let i = 0; i < 6; i++) { out = composeLocal(lang, branch, ids, mem); if (out !== lastDraft) break; }
+  }
+  box.value = out; lastDraft = out; dirty = false; hasDraft = true; busy = false;
+  $("copied").hidden = true; updateButtons();
+}
+async function copyText() {
+  const T = t(), box = $("text"), v = box.value; if (!v.trim()) return;
+  let ok = false;
+  try { await navigator.clipboard.writeText(v); ok = true; } catch (e) {
+    try { box.focus(); box.select(); ok = document.execCommand("copy"); } catch (e2) {}
+  }
+  $("copied").textContent = ok ? T.copied : T.copyFail; $("copied").hidden = false;
+}
+function openGoogle(ev) {
+  if (!branch) {
+    ev.preventDefault();
+    const e = $("branch-err"); e.textContent = t().chooseBranch; e.hidden = false;
+    $("branches").scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+}
+
+document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => {
+  lang = b.dataset.lang; try { sessionStorage.setItem("sh_lang", lang); } catch (e) {}
+  renderStatic();
+}));
+$("make").addEventListener("click", makeDraft);
+$("copy").addEventListener("click", copyText);
+$("open").addEventListener("click", openGoogle);
+$("text").addEventListener("input", () => { dirty = true; });
+renderStatic();
+</script>
+</body>
+</html>
